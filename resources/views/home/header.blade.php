@@ -14,7 +14,7 @@
                 <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#gallary">Gallery</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#book-table">Order Now</a>
@@ -22,7 +22,7 @@
         </ul>
 
         <a class="navbar-brand m-auto" href="#">
-            <img src="assets/imgs/logo.svg" class="brand-img" alt="">
+            <img src="assets/imgs/logo.png" class="brand-img" alt="">
             <span class="brand-txt">Sweet & Savory Fusion</span>
         </a>
 
