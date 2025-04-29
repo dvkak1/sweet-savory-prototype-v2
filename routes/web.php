@@ -4,13 +4,15 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 
-// use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\AdminController;
 
 Route::get('/', action:[HomeController::class, 'my_home']);
 
 Route::get('/home', [HomeController::class, 'index']);
 
-// Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+Route::get(uri: '/add_food', action: [AdminController::class, 'add_food']);
+
+Route::post(uri: '/upload_food', action: [AdminController::class, 'upload_food']);
 
 
 
