@@ -14,6 +14,8 @@ Route::get(uri: '/add_food', action: [AdminController::class, 'add_food']);
 
 Route::post(uri: '/upload_food', action: [AdminController::class, 'upload_food']);
 
+Route::get(uri: '/view_food', action: [AdminController::class, 'view_food']);
+
 
 
 Route::middleware([

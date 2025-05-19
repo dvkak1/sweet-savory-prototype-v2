@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  @include('admin.css')
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
+  <style>
+    table {
+        border: 1px solid  skyblue;
+        margin:auto;
+        width: 800px;
+    }
+
+    th {
+       background: skyblue;
+       color: white;
+       padding: 10px;
+       margin: 10px;
+    }
+    td {
+        color: white;
+        padding: 10px;
+    }
+  </style>
+
+  </head>
+  <body>
+     @include('admin.header')
+
+     @include('admin.sidebar')
+
+      <div class="page-content">
+        <div class="page-header">
+          <div class="container-fluid">
+            <h1>All Menu Items</h1>
+            <div>
+             <table>
+                 <tr>
+                    <center>
+                    <th>Menu item</th>
+                    <th>Details</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    </center>
+                 </tr>
+
+                    @foreach($data as $data)
+                 <tr>
+                    <td>{{$data->title}}</td>
+                    <td>{{$data->detail}}</td>
+                    <td>{{$data->price}}</td>
+                    <td>
+                        <img width="150" src="food_img/{{$data->image}}" alt="Food Image" style="width: 100px; height: 100px;">
+                    </td>
+                 </tr>
+                    @endforeach
+             </table>
+             </div>
+            </div>
+          </div>
+      </div>
+     @include('admin.js')
+  </body>
+</html>

@@ -29,7 +29,7 @@
 
             <div class="div_deg">
               <label for="">Menu item</label>
-              <input type="text" name="item">
+              <input type="text" name="title">
             </div>
 
             <div class="div_deg">

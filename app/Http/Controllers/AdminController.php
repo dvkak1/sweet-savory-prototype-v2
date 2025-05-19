@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Food;
 use Illuminate\Http\Request;
+
+use App\Models\Food;
 
 class AdminController extends Controller
 {
@@ -25,5 +26,12 @@ class AdminController extends Controller
         $data->save();
 
         return redirect()->back();
+    }
+
+    public function view_food()
+    {
+        $data = Food::all();
+        return view('admin.show_food', compact('data'));
+
     }
 }
