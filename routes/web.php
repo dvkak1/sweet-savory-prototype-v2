@@ -20,6 +20,8 @@ Route::get(uri: '/delete_food/{id}', action: [AdminController::class, 'delete_fo
 
 Route::get(uri: '/update_food/{id}', action: [AdminController::class, 'update_food']);
 
+Route::post(uri: '/edit_food/{id}', action: [AdminController::class, 'edit_food']);
+
 
 
 Route::middleware([
